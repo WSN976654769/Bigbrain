@@ -1,0 +1,120 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+img{
+  width: 100%;
+  height: 100%;
+}
+.editQuiz,.quiz, .questions, .addQuestion, .editQuestion, .join, .questionPart, .resultPart, .performance, .eachResult{
+  border: solid 1px black;
+  margin:50px;
+  padding: 50px;
+}
+button{
+  margin:10px;
+}
+
+input{
+  width: 300px;
+  height: 20px;
+}
+
+.bigStart{
+  font-size: 50pt;
+  width: 400px;
+  margin: 200px;
+  padding: 100px;
+  color:red;
+  background-color:paleturquoise;
+  border:none;
+  border-radius: 20%;
+  position: relative;
+  float: middle;
+}
+
+.btn{
+  background-color: hotpink;
+  font-size: 20pt;
+  width: 200px;
+  padding: 40px;
+  color: white;
+  border:none;
+  border-radius: 10%;
+  position: relative;
+
+}
+.btnActive{
+  background-color: goldenrod;
+  font-size: 20pt;
+  width: 200px;
+  padding: 40px;
+  color: black;
+  border:none;
+  border-radius: 10%;
+  position: relative;
+}
+span{
+  padding: 10px;
+}
+
+.regInf{
+  font-size: 20px;
+}
+
+#reg-con{
+  width: 60%;
+  height: auto;
+}
+
+#regBtn{
+  width: 100%;
+}
+
+.labelLogin{
+  font-size: 20px;
+}
+
+#btnLogin{
+  margin: auto;
+}
+
+#addQ{
+  font-size: 15px;
+  font-weight: bold;
+}
+
