@@ -1,35 +1,4 @@
-# Assessment 3 - ReactJS: BigBrain
-
-1. Background & Motivation
-2. The Task (Frontend)
-3. The Support (Backend)
-4. Constraints & Assumptions
-5. Teamwork
-6. Marking Criteria
-7. Originality of Work
-8. Submission
-9. Late Submission Policy
-10. FAQ
-
-## 0. Change Log
-
-* 31/10: Clarity on how to yarn install added to top of section 2. Clarity on how bonus marks bleed.
-* 31/10: Moving `config.json` from `frontend` to `frontend/src`
-* 01/11: Swagger doc complete and many routes fixed. Final items implemented. Interface on previously incomplete routes changed slightly (Admin deleting a quiz; admin "advancing" to next question; player joining has a name)
-* 01/11: Addition of information on `backend/src/customer.js` as a means to wrapping your custom data structure. Explained in `2.9`.
-* 01/11: (Backend adjustments) Addition of `thumbnail` and `name` to `PUT /admin/quiz/:quizid`. Addition of `thumbnail` to `GET /admin/quiz` and `GET /admin/quiz/:quidid`.
-* 03/11: (Backend adjustments) Changed the "active" field of the quiz object to be either the Session ID of an active session, or null if no section is active. Previously it was a boolean which wasn't very useful.
-* 03/11: (Backend adjustments) Invalid routes now return HTTP 404; Correction on how multiple answers are dealt with in custom.js; assertOwnsQuiz correctly working.
-* 05/11: Added "This login button, when clicked, returns you to the login screen." to `2.1.3`. Removed "The time it took them to complete each question" from `2.4.3`
-* 07/11: "QuizId.Active" now correctly returns an integer (instead of string). "quizId" on `GET /admin/quiz/{quizid}/start` removed from swagger docs to be consistent with implementation; fixed bug where timeout was not working correctly with seconds; session status endpoint swagger doc updated to reflect return type; returning questions instead of numQuestions (as you can get length from it); Removing authorisation from play routes; Correct return for `GET /play/:playerid/results` provided; Added `oldSessions` property to quiz object return.
-* 08/11: Correctly named response object for `GET /play/{playerid}/answer` to `answerIds`
-* 09/11: Section on "Testing" criteria updated.
-* 10/11: Reminder that `2.5` is NOT bonus features; Non-null return type when user hasn't answered anything
-* 11/11: Upon request, added 'isoTimeLastQuestionStarted' property to `GET /play/{playerid}/question` so that you can display a countdown / remaining timer on the frontend
-* 12/11: Added `answeredAt` property to results, to complete various sections; Clarity that only 3 components need to be tested; We encourage you to only use shallow component rendering; Question started time added to overall results payload for each user
-* 15/11: Added `/play/{playerid}/status` to allow a player to tell if the game has started or not - not required to be used, someone just asked for it
-* 20/11: Made clear that 'Updates the thumbnail and name of the game successfully (yes, it will have no questions)' is not required
-* 20/11: Recommendation to put a `TESTING.md` file in the project repo with information about your tets if you feel they need some explanation 
+# ReactJS: BigBrain
 
 ## 1. Background & Motivation
 
